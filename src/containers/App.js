@@ -29,7 +29,7 @@ class App extends Component {
 		const filteredRobots = robots.filter( robot => {
 			return robot.name.toLowerCase().includes(searchfield);
 		})
-		return !robots.length ? 
+		return (!robots.length) ? 
 			<h1 className='tc header'>loading...</h1> :
 			(
 				<div className='tc'>
